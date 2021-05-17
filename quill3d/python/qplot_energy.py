@@ -55,9 +55,9 @@ def energy_level(data_folder=None, save2=None, include_deleted=True, clf=False, 
         plt.clf()
     #total_energy = np.sum(tmp[:,1:5], axis=1)
     if 't' in species:
-        plt.plot(tmp[mid_value_ind(tmp[:,1])], tmp[mid_value_ind(tmp[:,1]),0], ".", color="g")
+        plt.plot(tmp[mid_value_ind(tmp[:,1]), 1], tmp[mid_value_ind(tmp[:,1]),0], ".", color="g")
     if "t_np" in species:
-        plt.plot(tmp[mid_value_ind(tmp[:,1])], tmp[mid_value_ind(tmp[:,1]),0], ".", color="b") 
+        plt.plot(tmp[mid_value_ind(tmp[:,1]), 1], tmp[mid_value_ind(tmp[:,1]),0], ".", color="b") 
 
     if (resread.catching or (resread.dump_photons and 'g' in species)) and include_deleted:
         # deleted energy

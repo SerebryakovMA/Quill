@@ -3,6 +3,7 @@ from os import path as osp
 
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 import qplot
 import qplot_energy
 
@@ -22,7 +23,7 @@ def energy_plots(data, header):
 
 def treck_length(data, header):
     for i in data:
-        if (i[-9:-6] = "not"):
+        if (i[-9:-6] == "not"):
             qplot_energy.energy_level(df="../"+i, species="t_np")
         else:
             qplot_energy.energy_level(df="../"+i, species="t")
